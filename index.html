@@ -34,7 +34,6 @@
         background-attachment: unset;
         background-repeat: no-repeat;
         font-family: "Manrope", sans-serif;
-        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -50,6 +49,23 @@
         color: #fff;
         font-weight: 200;
         text-shadow: 0px 0px 5px #000000;
+      }
+      main {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      footer {
+        height: 10vh;
+        color: #fff;
+        text-shadow: 0px 0px 5px #000000;
+      }
+      footer nav a {
+        margin: 0 1rem;
+        opacity: 0.8;
       }
       @media screen and (min-width: 400px) {
         h1 {
@@ -71,9 +87,43 @@
     <link rel="icon" href="./favicon.svg" />
   </head>
   <body>
-    <h1>
-      <img src="./logo.svg" alt="volt.camp" />
-    </h1>
-    <p>The future of eco-friendly van camping is electric.</p>
+    <main>
+      <h1>
+        <img src="./logo.svg" alt="volt.camp" />
+      </h1>
+      <p>The future of eco-friendly van camping is electric.</p>
+    </main>
+    <footer>
+      <nav>
+        <a
+          href="https://twitter.com/volt_camp"
+          title="volt.camp on Twitter"
+          target="_blank"
+        >
+          <img src="./twitter.svg" alt="Twitter" />
+        </a>
+        <a
+          href="https://instagram.com/volt.camp"
+          title="volt.camp on Instagram"
+          target="_blank"
+        >
+          <img src="./instagram.svg" alt="Instagram" />
+        </a>
+        <a
+          href="https://facebook.com/volt.camp"
+          title="volt.camp on Facebook"
+          target="_blank"
+        >
+          <img src="./facebook.svg" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UC5hWeHGNJroaHjwA4gF8IrQ"
+          title="volt.camp on YouTube"
+          target="_blank"
+        >
+          <img src="./youtube.svg" alt="YouTube" />
+        </a>
+      </nav>
+    </footer>
   </body>
 </html>
