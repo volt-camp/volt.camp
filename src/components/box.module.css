@@ -1,0 +1,11 @@
+@import "../vars.css";
+
+.box {
+  border: 1px solid var(--border-color);
+  width: calc(100% - 2px - 2rem);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+.box p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,4 @@
+node_modules/
+.cache/
+public
+**/*.module.css.d.ts

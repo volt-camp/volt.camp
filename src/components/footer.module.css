@@ -1,0 +1,38 @@
+@import "../vars.css";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color-dim);
+  margin-top: 1rem;
+}
+
+.footer aside {
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.footer aside strong {
+  font-weight: 800;
+  font-family: "Dosis", sans-serif;
+  font-size: 150%;
+}
+.footer aside strong small {
+  font-weight: 600;
+}
+
+.footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer nav svg {
+  color: var(--text-color-dim);
+}
+.footer nav a + a {
+  margin-left: 1rem;
+}
