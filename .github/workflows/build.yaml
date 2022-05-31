@@ -1,4 +1,4 @@
-name: Test and Release
+name: Build and Release
 
 on: push
 
@@ -44,7 +44,7 @@ jobs:
           echo "machine github.com login accesskey password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
           git config --global user.email "actions@example.com"
           git config --global user.name "GitHub Actions"
-          cd build
+          cd public
           touch .nojekyll
           echo ${{ env.DOMAIN }} > CNAME
           git init
