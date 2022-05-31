@@ -1,5 +1,5 @@
 {
-  "name": "volt.camp/website",
+  "name": "@volt.camp/volt.camp",
   "version": "0.0.0-development",
   "description": "Source code for volt.camp, using TypeScript, Gatsby, and Contentful",
   "author": "Markus Tacker",
