@@ -45,6 +45,7 @@ export const Header = () => {
 							<a href="/contact">Contact</a>
 						</nav>
 						<nav className={headerStyles.socialMediaIcons}>
+							<span>Follow us:</span>
 							<SocialMediaLinks />
 						</nav>
 					</div>

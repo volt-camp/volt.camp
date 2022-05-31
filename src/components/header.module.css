@@ -32,7 +32,7 @@
 
 .mobileNavLinks a {
   text-decoration: none;
-  color: #222;
+  color: var(--text-color);
   display: inline-block;
 }
 .header a {
@@ -60,6 +60,17 @@
   padding: 0.5rem 1.5rem;
   border-radius: 100px;
   opacity: 1;
+}
+
+.socialMediaIcons {
+  display: flex;
+  align-items: center;
+}
+.socialMediaIcons span {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  opacity: 0.75;
+  color: var(--text-color);
 }
 
 .socialMediaIcons svg {

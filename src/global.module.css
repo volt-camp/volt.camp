@@ -1,0 +1,19 @@
+@import "./vars.css";
+
+:global(body) {
+    font-family: "Overpass", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  :global(body) h1,
+  :global(body) h2,
+  :global(body) h3,
+  :global(body) h4,
+  :global(body) h5,
+  :global(body) h6 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+  }

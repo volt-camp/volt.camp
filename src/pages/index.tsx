@@ -7,6 +7,7 @@ import { Head } from '../components/head'
 import { Header } from '../components/header'
 import Logo from '../images/logo.svg'
 import * as indexStyles from './index.module.css'
+import '../global.module.css'
 
 const IndexPage: React.FunctionComponent<
 	PageProps<{
@@ -51,7 +52,6 @@ const IndexPage: React.FunctionComponent<
 						</Box>
 					</aside>
 				</div>
-
 				<Footer />
 			</div>
 		</>

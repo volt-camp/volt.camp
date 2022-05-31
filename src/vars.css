@@ -1,6 +1,7 @@
 :root {
   --max-width: 960px;
   --text-color-dim: #555;
+  --text-color: #222;
   --border-color: #ddd;
   --border-radius: 8px;
   --color-highlight-primary: rgba(10, 231, 255, 1);
