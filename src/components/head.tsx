@@ -3,16 +3,19 @@ import { Helmet } from 'react-helmet'
 
 import '../../node_modules/normalize.css/normalize.css'
 
-export const Head = () => {
+export const Head = ({
+	title,
+	description,
+}: {
+	title: string
+	description: string
+}) => {
 	const linkRef = React.useRef<HTMLLinkElement>(null)
 	return (
 		<Helmet>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>volt.camp</title>
-			<meta
-				name="description"
-				content="The future of eco-friendly van camping is electric."
-			/>
+			<title>{title}</title>
+			<meta name="description" content={description} />
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
 			<link
 				rel="preconnect"

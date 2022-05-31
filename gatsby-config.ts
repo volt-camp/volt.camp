@@ -1,9 +1,12 @@
 import type { GatsbyConfig } from 'gatsby'
 
+const domain = process.env.DOMAIN ?? 'volt.camp'
+
 const config: GatsbyConfig = {
 	siteMetadata: {
-		title: `volt.camp`,
-		siteUrl: `https://volt.camp`,
+		title: domain,
+		siteUrl: `https://${domain}`,
+		description: 'The future of eco-friendly van camping is electric.'
 	},
 	plugins: [
 		{

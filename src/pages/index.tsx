@@ -1,3 +1,4 @@
+import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
 import { ArticleTile } from '../components/ArticleTile'
 import { Box } from '../components/box'
@@ -7,10 +8,25 @@ import { Header } from '../components/header'
 import Logo from '../images/logo.svg'
 import * as indexStyles from './index.module.css'
 
-const IndexPage = () => {
+const IndexPage: React.FunctionComponent<
+	PageProps<{
+		site: {
+			siteMetadata: {
+				title: string
+				description: string
+			}
+		}
+	}>
+> = ({
+	data: {
+		site: {
+			siteMetadata: { title, description },
+		},
+	},
+}) => {
 	return (
 		<>
-			<Head />
+			<Head title={title} description={description} />
 			<div className={indexStyles.outer}>
 				<Header />
 				<div className={indexStyles.columnLayout}>
@@ -43,3 +59,14 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+	{
+		site {
+			siteMetadata {
+				title
+				description
+			}
+		}
+	}
+`
