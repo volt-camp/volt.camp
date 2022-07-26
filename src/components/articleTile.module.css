@@ -11,6 +11,10 @@
   justify-content: flex-end;
 }
 
+.articleTile a {
+  text-decoration: none;
+}
+
 .background {
   position: absolute;
   top: 0;
@@ -67,8 +71,10 @@
 }
 
 .articleTile p {
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 0.5rem;
+  font-size: 150%;
+  line-height: 125%;
 }
 
 .articleTile dl {

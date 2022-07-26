@@ -1,30 +1,16 @@
-import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
 import { ArticleTile } from '../components/ArticleTile'
 import { Box } from '../components/box'
 import { Footer } from '../components/footer'
 import { Head } from '../components/head'
 import { Header } from '../components/header'
-import Logo from '../images/logo.svg'
-import * as indexStyles from './index.module.css'
 import '../global.module.css'
+import Logo from '../images/logo.svg'
+import { useSiteMetadata } from '../useSiteMetadata'
+import * as indexStyles from './index.module.css'
 
-const IndexPage: React.FunctionComponent<
-	PageProps<{
-		site: {
-			siteMetadata: {
-				title: string
-				description: string
-			}
-		}
-	}>
-> = ({
-	data: {
-		site: {
-			siteMetadata: { title, description },
-		},
-	},
-}) => {
+const IndexPage: React.FunctionComponent = () => {
+	const { title, description } = useSiteMetadata()
 	return (
 		<>
 			<Head title={title} description={description} />
@@ -37,6 +23,7 @@ const IndexPage: React.FunctionComponent<
 								'https://images.ctfassets.net/l9w5g6t31jrn/6IsQTLBxS4cSTNylfn4L6o/c65b43dc3ec28b66f1701358c622eb47/image.png'
 							}
 							category={'Van'}
+							link={'/article'}
 						></ArticleTile>
 					</main>
 					<aside>
@@ -59,14 +46,3 @@ const IndexPage: React.FunctionComponent<
 }
 
 export default IndexPage
-
-export const query = graphql`
-	{
-		site {
-			siteMetadata {
-				title
-				description
-			}
-		}
-	}
-`

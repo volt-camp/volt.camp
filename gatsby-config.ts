@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
 	siteMetadata: {
 		title: domain,
 		siteUrl: `https://${domain}`,
-		description: 'The future of eco-friendly van camping is electric.'
+		description: 'The future of eco-friendly van camping is electric.',
 	},
 	plugins: [
 		{

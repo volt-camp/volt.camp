@@ -1,24 +1,29 @@
 import * as React from 'react'
 
+import { Link } from 'gatsby'
+
 import * as articleTileStyles from './articleTile.module.css'
 
 export const ArticleTile = ({
 	image,
 	category,
+	link,
 }: {
 	image: string
 	category: string
+	link: string
 }) => {
 	const i = new URL(image)
 	i.searchParams.set('fm', 'webp')
 	i.searchParams.set('w', '960')
 	return (
-		<div
-			className={articleTileStyles.articleTile}
-		>
-			<div className={articleTileStyles.background}
-			style={{ backgroundImage: `url(${i.toString()})` }}></div>
-			<section>
+		<div className={articleTileStyles.articleTile}>
+			<Link to={link}>
+				<div
+					className={articleTileStyles.background}
+					style={{ backgroundImage: `url(${i.toString()})` }}
+				></div>
+				<section>
 					<span className={articleTileStyles.tag}>{category}</span>
 					<h1>Iridium</h1>
 					<p>
@@ -31,8 +36,8 @@ export const ArticleTile = ({
 						<dt>Range</dt>
 						<dd>300&nbsp;km</dd>
 					</dl>
-			</section>
+				</section>
+			</Link>
 		</div>
 	)
-	
 }

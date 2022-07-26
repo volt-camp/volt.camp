@@ -1,0 +1,13 @@
+@import "../vars.css";
+
+.image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: var(--border-radius);
+  box-shadow: 5px 5px 10px 0px #0000002e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 4rem 0;
+}

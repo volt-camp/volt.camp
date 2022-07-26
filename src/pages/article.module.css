@@ -1,0 +1,89 @@
+.columnLayout {
+  width: 100%;
+}
+
+.columnLayout > * + * {
+  margin-top: 1rem;
+}
+
+.outer {
+  max-width: var(--max-width);
+  margin: 0 1rem;
+}
+@media screen and (min-width: 960px) {
+  .outer {
+    margin: 0 auto;
+  }
+}
+
+.asideLogo {
+  text-align: center;
+}
+
+.sectionNav {
+  opacity: 0.8;
+}
+
+.sectionNav a,
+.sectionNav span {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.sectionNav a::before,
+.sectionNav span::before {
+  content: "";
+  border-left: 1px solid #ccc;
+  padding-left: 1rem;
+}
+
+.main article h1 {
+  font-size: 300%;
+  line-height: 110%;
+  font-weight: 200;
+  margin: 2rem 0 1rem 0;
+}
+
+.articleMeta {
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.articleMeta > * + * {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.articleMeta > *::before {
+  content: "";
+  margin-right: 1rem;
+  border-radius: 100%;
+  border: 2px solid var(--color-highlight-secondary);
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+
+.articleMeta > *:first-child:before {
+  content: "";
+  margin-right: 0;
+  display: auto;
+  border: 0;
+  width: 0;
+}
+
+.articleMeta a {
+  display: flex;
+  align-items: center;
+}
+
+.articleMeta img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--color-highlight-primary);
+  margin-right: 5px;
+}
