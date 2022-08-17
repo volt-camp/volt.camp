@@ -32,7 +32,7 @@
     "@types/react-helmet": "6.1.5",
     "eslint": "8.22.0",
     "gatsby": "4.21.0",
-    "gatsby-plugin-dts-css-modules": "2.2.0",
+    "gatsby-plugin-dts-css-modules": "3.0.0",
     "gatsby-plugin-image": "2.21.0",
     "gatsby-plugin-manifest": "4.21.0",
     "gatsby-plugin-mdx": "3.20.0",
