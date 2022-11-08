@@ -43,7 +43,7 @@
     "gatsby-source-contentful": "7.22.0",
     "gatsby-source-filesystem": "4.24.0",
     "gatsby-transformer-sharp": "4.24.0",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "typescript": "4.8.4"
