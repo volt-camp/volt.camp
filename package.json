@@ -31,7 +31,7 @@
     "@types/react-dom": "18.2.4",
     "@types/react-helmet": "6.1.6",
     "eslint": "8.36.0",
-    "gatsby": "4.25.6",
+    "gatsby": "4.25.7",
     "gatsby-plugin-dts-css-modules": "3.0.0",
     "gatsby-plugin-image": "2.25.0",
     "gatsby-plugin-manifest": "4.25.0",
